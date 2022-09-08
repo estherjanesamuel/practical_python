@@ -40,6 +40,7 @@ Producer - Message Queue or Broker - Consumer
 
 
 ```py
+producer.py
 """
 A basic example of a Redpanda producer
 """
