@@ -37,9 +37,10 @@ Producer - Message Queue or Broker - Consumer
 - Python / Dotnet / Go
 - Redpanda / Kafka (Docker)
 - Worker
-    - Producer
+
+
 ```py
-    """
+"""
 A basic example of a Redpanda producer
 """
 import os
@@ -95,12 +96,12 @@ for i in range(10):
     # produce a greeting to the topic
     redpanda_producer.produce( str(i),"{\"pid\":1%s%s,\"recommended_pids\":[%s%s%s,789]})" %(str(i), str(i + 1),str(i + 1),str(i + 2),str(i + 3)))
     
-```     
+```  
 
-    - Consumer
-        - Streaming
-        - Batch
+    
+    
 - Graceful Shutdown
+    - asads
 
 ## Conclusion / Key Takeaways
 Two Essential concepts in this tutorial:
