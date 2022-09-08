@@ -32,14 +32,15 @@ Producer - Message Queue or Broker - Consumer
 
 ## Hands On
 
-### Environment Setup
+## Environment Setup
 
-- Python / Dotnet / Go
-- Redpanda / Kafka (Docker)
-- Worker
+### Python / Dotnet / Go
+### Redpanda / Kafka (Docker)
+#### Worker
 
+producer.py
 
-```py, producer.py
+```py
 """
 A basic example of a Redpanda producer
 """
