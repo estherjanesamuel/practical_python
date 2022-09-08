@@ -32,11 +32,11 @@ class Producer:
         )
         self.topic = config.topic
 
-    def produce(self, message: str, key: str):
+    def produce(self, message: str):
         """Produce a single message to a Redpanda topic"""
         try:
             # send a message to the topic
-            future = self.client.send(self.topic, key=key, value=message)
+            future = self.client.send(self.topic, key="key1", value=message)
 
             # this line will block until the message is sent (or timeout).
             _ = future.get(timeout=10)
@@ -52,5 +52,5 @@ redpanda_producer = Producer(config)
 
 for i in range(10):
     # produce a greeting to the topic
-    redpanda_producer.produce( str(i),"{\"pid\":1%s%s,\"recommended_pids\":[%s%s%s,789]})" %(str(i), str(i + 1),str(i + 1),str(i + 2),str(i + 3)))
-    
+    # redpanda_producer.produce( "{\"pid\":1%s%s,\"recommended_pids\":[%s%s%s,789]})" %(str(i), str(i + 1),str(i + 1),str(i + 2),str(i + 3)))
+    redpanda_producer.produce(f"{i + 1}")

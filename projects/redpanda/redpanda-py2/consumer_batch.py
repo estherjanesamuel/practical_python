@@ -4,7 +4,6 @@ A basic example of a Redpanda consumer
 import signal
 from dataclasses import dataclass
 from time import sleep
-
 from kafka import KafkaConsumer
 
 is_shutting_down = False
