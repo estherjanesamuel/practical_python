@@ -16,8 +16,6 @@ eggs/
 .eggs/
 lib/
 lib64/
-*lib/
-*lib64/
 parts/
 sdist/
 var/
@@ -129,9 +127,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-# custom
-*python
-*python3
-*lib64
-*.cfg
