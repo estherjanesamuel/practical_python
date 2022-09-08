@@ -38,7 +38,7 @@ Producer - Message Queue or Broker - Consumer
 - Redpanda / Kafka (Docker)
 - Worker
     - Producer
-    ```py
+```py
     """
 A basic example of a Redpanda producer
 """
@@ -95,7 +95,8 @@ for i in range(10):
     # produce a greeting to the topic
     redpanda_producer.produce( str(i),"{\"pid\":1%s%s,\"recommended_pids\":[%s%s%s,789]})" %(str(i), str(i + 1),str(i + 1),str(i + 2),str(i + 3)))
     
-    ```
+```     
+
     - Consumer
         - Streaming
         - Batch
