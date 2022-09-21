@@ -60,7 +60,7 @@ class Consumer:
 
 signal.signal(signal.SIGINT, graceful_exit)
 signal.signal(signal.SIGTERM, graceful_exit)
- 
+
 config = ConsumerConfig()
 redpanda_consumer = Consumer(config)
 redpanda_consumer.consume()

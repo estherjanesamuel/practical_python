@@ -34,9 +34,9 @@ def process_message():
     # combine all tasks in 1 call, this is the beuty of batch worker
     print("processing task...." + str(temp_task))
     sleep(0.5)
-    print("\nprocessing next task...." + str(temp_task))
+    print("processing next task...." + str(temp_task))
     sleep(0.5)
-    print(f"\ntask finish... \n" )
+    print(f"task finish... \n" )
 
 
 def graceful_exit(*args, **kwargs):
@@ -78,7 +78,7 @@ if __name__ == "__main__":
     redpanda_consumer = Consumer()
     redpanda_consumer.daemon = True
     redpanda_consumer.start()
-    
+
     while True:
         process_message()
         sleep(5)
