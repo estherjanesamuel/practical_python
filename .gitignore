@@ -135,3 +135,7 @@ dmypy.json
 *python3
 *lib64
 *.cfg
+
+bin/
+share/
+*.whl

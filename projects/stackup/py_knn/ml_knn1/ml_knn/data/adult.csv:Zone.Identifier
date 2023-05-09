@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://app.stackup.dev/
+HostUrl=https://s3.amazonaws.com/appforest_uf/f1659194719468x110155850869434910/adult.csv
